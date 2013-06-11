@@ -6,12 +6,16 @@ class Database
 
 	def initialize
 		@db = []
+		# @contact = Contact.new
 	end
 
 	def add_contact(contact)
 		@db << contact
 	end
 
-
+	def delete_contact(contact)
+		@db.delete(contact)
+		@db
+	end
 
 end
