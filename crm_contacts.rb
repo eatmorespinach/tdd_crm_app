@@ -26,9 +26,9 @@ class Contact
 		end	
 	end
 
-	def display_contact
-		puts "first name: #{@firstname}, last name: #{@lastname}, email: #{@email}, notes: #{@notes}"
-	end
+	# def display_contact
+	# 	puts "first name: #{@firstname}, last name: #{@lastname}, email: #{@email}, notes: #{@notes}"
+	# end
 	
 	def search(attribute)
 		if self.id == attribute
@@ -45,6 +45,10 @@ class Contact
 			return false
 		end
 	end	
+
+	def does_contact_match_email?(email)
+		self.email == email
+	end
 
 end
 

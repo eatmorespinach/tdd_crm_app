@@ -29,6 +29,11 @@ class ContactTest < Test::Unit::TestCase
 		assert true == @contact.search("Davis")
 	end
 
+	def method_name
+		
+	end
+
+	
 
 end
 
