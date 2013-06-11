@@ -18,3 +18,11 @@ class Contact
 	#def modify(id, first_name, last_name, email, notes)
 
 end
+
+
+
+
+# def test_all_five_attributes_mandatory
+# 		@contact = Contact.new(3, "", "Davis", "bob_davis@gmail.com", "He is cool")
+# 		assert_error()
+# 	end
