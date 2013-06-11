@@ -6,20 +6,15 @@ class Database
 
 	def initialize
 		@contacts_array = []
-		# @contact = Contact.new
 	end
 
 	def add_contact(contact)
 		@contacts_array << contact
 	end
 
-	# def delete_contact(contact)
-	# 	@contacts_array.delete(contact)
-	# end
-
 	def delete_contact_by_attribute(attribute)
 			@contacts_array.each do |contact|
-				if attribute ==  contact.id
+				if attribute ==  contact.id 
 					@contacts_array.delete(contact)
 				elsif attribute == contact.firstname
 					@contacts_array.delete(contact)
@@ -33,4 +28,13 @@ class Database
 			end
 	end
 
+	def delete_contact_by_x(attribute)
+		@contacts_array.each do |contact|
+			puts "I'm inside delete_contact_by_x, and the value of contact first_name is #{contact.firstname}"
+
+			if contact.search(attribute)
+				@contacts_array.delete(contact)
+			end
+		end
+	end
 end

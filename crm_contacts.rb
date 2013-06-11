@@ -12,8 +12,8 @@ class Contact
  		@notes = notes
  	end
 
-	
-	#def modify(id, first_name, last_name, email, notes)
+ 	# ? :
+
 	def modify(attribute, new_attribute)
 		if attribute == "first name"
 			self.firstname = new_attribute
@@ -26,28 +26,29 @@ class Contact
 		end	
 	end
 
-	# def display_contact
-	# 	puts "first name: #{@firstname}, last name: #{@lastname}, email: #{@email}, notes: #{@notes}"
-	# end
-	
-	def search(attribute)
-		if self.id == attribute
-			return true
-		elsif self.firstname == attribute
-			return true
-		elsif self.lastname == attribute
-			return true
-		elsif self.email == attribute
-			return true
-		elsif self.notes == attribute
-			return true
-		else
-			return false
-		end
-	end	
 
-	def does_contact_match_email?(email)
-		self.email == email
+	# def search(attribute)
+	# 	if self.id == attribute
+	# 		return true
+	# 	elsif self.firstname == attribute
+	# 		return true
+	# 	elsif self.lastname == attribute
+	# 		return true
+	# 	elsif self.lastname == attribute
+	# 		return true
+	# 	elsif self.notes == attribute
+	# 		return true
+	# 	else
+	# 		return false
+	# 	end
+	# end	
+
+	def search(attribute)
+		self.id == attribute || 
+		self.firstname == attribute || 
+		self.lastname == attribute || 
+		self.email == attribute || 
+		self.notes == attribute 
 	end
 
 end

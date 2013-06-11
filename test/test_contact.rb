@@ -21,32 +21,10 @@ class ContactTest < Test::Unit::TestCase
 		assert_equal("Mark",@contact.firstname)
 	end
 
-	# def test_display_contact
-	# 	assert_respond_to("first name: #{@firstname}, last name: #{@lastname}, email: #{@email}, notes: #{@notes}", @contact.display_contact)
-	# end
-
 	def test_to_search_attribute
 		assert true == @contact.search("Davis")
 	end
 
-	def method_name
-		
-	end
-
-	
-
 end
-
-
-
-#display contact on screen
-
-# def test_all_five_attributes_mandatory
-# 		@contact = Contact.new(3, "", "Davis", "bob_davis@gmail.com", "He is cool")
-# 		assert_error()
-# 	end
-
-
-
 
 
