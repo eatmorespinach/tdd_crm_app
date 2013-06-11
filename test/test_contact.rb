@@ -26,9 +26,3 @@ end
 
 
 
-
-
-# def test_all_five_attributes_mandatory
-# 		@contact = Contact.new(3, "", "Davis", "bob_davis@gmail.com", "He is cool")
-# 		assert_error()
-# 	end
