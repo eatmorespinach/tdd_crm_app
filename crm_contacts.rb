@@ -27,6 +27,7 @@ class Contact
 	end
 
 
+
 	# def search(attribute)
 	# 	if self.id == attribute
 	# 		return true
